@@ -1,0 +1,42 @@
+Insert the Form Data into a Table
+====================================
+1. Create a HTML Form with fields name,email,mobile and message
+
+2. Design the Form by using CSS - If You Know
+
+3. Validate the form by using JavaScript
+
+4. Collect the Form data by using PHP
+
+5. Connect to Database
+
+6. Insert the Data into the Table
+
+	INSERT INTO
+	===============
+	
+	1. INSERT INTO <table-name> VALUES('value1','value2','value3',......)
+	
+	example:
+		
+		INSERT INTO enquiries VALUES('','Ram','ram@mail.com','1234234',"Hello")
+		
+		
+	2.  INSERT INTO <table-name>(column1, column2, column3,...) values('value1','value2','value3',....)
+	
+	example:
+	===========
+	
+	INSERT INTO enquiries(name,email,mobile,message) VALUES('Ram','ram@mail.com','23423432','Hello');
+	
+	INSERT INTO enquiries(message, name,mobile,email) VALUES('Ram','ram@mail.com','23423432','Hello');
+	
+	
+	
+	
+	
+	
+	
+	
+
+7. SUCCESS

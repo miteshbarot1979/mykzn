@@ -1,0 +1,74 @@
+
+Data types and type casting
+
+Dynamic Data type
+
+
+$a = 100;
+
+var a = 100
+
+int float double, boolean,....
+
+
+var_dump();
+============
+by using this method we can print a variable with its data type
+
+
+
+is_int():
+=========
+by using this method, we can check whether the variable is an integer or not, if it is an integer this method returns true otherwise false
+
+is_float():
+===========
+by using this method, we can check whether the variable is an float or not, if it is an float this method returns true otherwise false
+
+
+is_string():
+===========
+by using this method, we can check whether the variable is an string or not, if it is a string this method returns true otherwise false
+
+
+is_double()
+is_bool()
+is_array()
+is_object()
+
+
+type casting
+===============
+
+$variable = (datatype)$varibale;
+
+
+$x = "100";
+
+$x = (int)$x
+
+
+
+isset()
+==========
+By uisng this method, we can check whether the variable is set or defined with a value or not. this method returns true, if the variable is set with value otherwise returns false
+
+
+unset()
+========
+this method removes the value of a variable. this method does not return anything
+
+
+
+
+
+
+
+
+
+
+
+
+how to convert an array into an object?
+
+how to convert an object into a array?

@@ -1,0 +1,94 @@
+how can we connect to DB Programtically ?
+============================================
+
+We have PHP & MySQL library
+
+we need to connect to DB?
+
+mysqli_connect();
+==================
+By using this method, we connect to database server. This method returns connection object
+
+this method have four parameters, they are:
+
+1. hostname - localhost
+2. database username - root
+3. database password - 
+4. database name - 8pmoct
+
+
+$con = mysqli_connect("localhost","root","","9pmoct");
+
+or
+
+$con = mysqli_connect("localhost","root","","9pmoct") or die("Sorry! Unable to connect");
+
+
+2. mysqli_query():
+=================
+BY using this method, we can execute SQL Queries (select, delete, insert, create, alter,....)
+
+this method has two parameters, they are
+
+1. connection object
+2. the SQL Query
+
+
+$resultSet = mysqli_query($con, "select * from enquiries");
+
+
+mysqli_nun_rows($resultSet)
+============================
+By uinsg this method, we can fetch the total no.of records from a table
+
+
+===========================================================================
+
+In Howmany ways, we can fetch the data from Result Set ?
+
+Ans:  4 Ways
+
+What are the 4 Ways?
+
+1. mysqli_fetch_row(resultSet):
+=================================
+by using this method, we can fetch the data from result set. This method can fetch only one record at a time. 
+This method returns the data as an in INDEXED ARRAY
+
+2. mysqli_fetch_assoc(resultSet):
+=================================
+by using this method, we can fetch the data from result set. This method can fetch only one record at a time. 
+This method returns the data as an in ASSOCIATIVE ARRAY
+
+
+3. mysqli_fetch_array(resultSet):
+================================
+by using this method, we can fetch the data from result set. This method can fetch only one record at a time.
+This method returns the data as combination of INDEXED ARRAY and ASSOCIATIVE ARRAY
+
+
+4. mysqli_fetch_object(resultSet)
+====================================
+by using this method, we can fetch the data from result set. This method can fetch only one record at a time.
+This method returns the data as an Object
+
+
+1.create HTML table
+2. Design the Table using CSS if you know
+3. connect to database
+4. Excute the select query
+5. fetch the data from result set
+
+
+
+
+
+
+
+
+
+
+
+
+
+

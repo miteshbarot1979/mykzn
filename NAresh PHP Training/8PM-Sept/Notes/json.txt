@@ -1,0 +1,28 @@
+=======
+JavaScript 
+	-AJAX
+	-JSON
+
+JSON => Purpose of JSON
+
+
+Exachanging the data between the client and server
+
+Exachanging the data between the different programming languages
+
+
+var data = {firstname:'Ram', lastname:'Babburi',city:'Hyderabad'};
+
+
+var data = '{"firstname":"Ram","lastname":"Babburi","city":"Hyderabad"}';
+
+
+PHP - 10 Records - JSON <===================> JSON - 10 - Java
+           
+
+Java <=================> IOS, Android
+           JSON
+
+
+Telugu <==========> Hindi
+          English

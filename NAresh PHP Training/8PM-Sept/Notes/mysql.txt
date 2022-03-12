@@ -1,0 +1,75 @@
+
+PHP & MySQL Library
+====================
+
+php provides collection of predfined functions to work with MySQL database
+
+database => to save the data ==> in the tables ==> collection rows and columns
+
+15+ databases
+
+Connect to MySQL DB
+======================
+cmd prompt - 
+
+programming
+
+for every db there is default username and password
+
+username:root
+password:
+
+==========================================================
+
+to work with mysql in cmd, we have to execute mysql.exe
+
+Located: c:/xampp/mysql/bin>
+
+
+
+List All the databases from db server
+
+SHOW Databases
+
+List all the tables from a database
+
+
+use database;
+
+
+create database <db-name>;
+
+
+phpmyadmin
+===========
+
+http://localhost/phpmyadmin
+
+
+
+
+Contact Form
+==============
+id
+name
+email
+mobile
+message
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

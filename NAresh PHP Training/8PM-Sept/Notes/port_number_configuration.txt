@@ -1,0 +1,18 @@
+Bllocked Port number missing dependencies
+
+What is the default port number of apache server ?
+80
+
+How to change the port number of apache?
+
+Location: c:/xampp/apache/conf
+file: httpd.conf - server configuration settings file
+
+open the file, find the property called Listen with default port 80, change the port number as 100 or any. save the file, RESTART the SERVER
+
+
+What is the default port number of MySQL server ?
+3306
+
+What is the default port number of Toncat server ?
+8080

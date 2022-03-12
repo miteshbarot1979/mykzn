@@ -1,0 +1,63 @@
+
+Conditional Statements
+=======================
+syntax
+
+block of code
+
+if(condition)
+{
+	//some code
+}
+
+if we want to execute some block of code at perticular point of time only
+
+What is a condition?
+=======================
+
+hello hi Ram
+
+10
+
+-20
+
+true
+
+$x = 100;
+
+10+20-40
+
+if you learn well we can get job
+
+10 <= 20
+
+
+0
+null
+false
+
+
+10 <= 16 && false
+	T && F
+	==========
+		F
+10 <= 16 || false
+
+	T  || F
+	==========
+	    T
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

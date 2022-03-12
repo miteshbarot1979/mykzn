@@ -1,0 +1,44 @@
+String Handling
+===============
+String is a collection of chars or words
+
+In PHP, how many ways we can define a string?
+
+4 ways
+
+1. Double Quotes ==> "Welcome"
+
+$str = "Welcome";
+
+2. Single Quotes ==> 'Welcome'
+
+$str = 'Welcome';
+
+3. Heredoc Syntax
+
+$str = <<<XYZ
+Welcome
+XYZ;
+
+4 Nowdoc Syntax
+
+$str = <<<'EOD'
+Welcome
+EOD;
+
+
+
+
+Assignment1
+============
+Find the Length of a string without using predefined method?
+
+
+explode(): Converts a string into an array
+implode(): Converts an array into a string
+
+
+
+
+
+

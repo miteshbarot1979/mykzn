@@ -1,0 +1,53 @@
+Files and File Handling
+========================
+
+ctrl +x , ctrl+c
+
+ctrl +v
+
+create a file, create a folder, remove a file, remove a folder
+
+list all the files  from a folder
+
+
+File Uploading
+
+File Downloading
+
+
+File Modes
+==============
+
+r - read mode
+==============
+by using this mode, we can open a file to perform read operation only.
+in read mode, if the specified file is not available, we can get warning error
+
+
+w - write mode
+===============
+by using this mode, we can open a file to perform write operation only.
+in write mode, for every write operation, the existing content overrides with the new content
+
+in write mode, if the specified file is not available, this will creates a new file with in the current directory
+
+a - append mode
+==================
+by using this mode, we can open a file to perform write operation only.
+
+in append mode, for every write operation, the existing content appends with the new content
+in append mode, if the specified file is not available, this will creates a new file with in the current directory
+
+
+fgets:
+=======
+reads only one line of data from a resource, if no line found to read it will return false
+this method will include HTML tags
+
+fgetss:
+=======
+reads only one line of data from a resource, if no line found to read it will return false
+
+this method does not include HTML tags
+
+

@@ -1,0 +1,5 @@
+''''' EMPLOYEE MASTER TABLE
+CREATE TABLE `kaizen`.`emp_master` ( `Emp_Code` INT(4) NOT NULL , `Emp_Name` VARCHAR(50) NOT NULL , `Emp_Img` VARCHAR(500) NOT NULL , `Emp_Desig` TEXT NOT NULL , `Emp_Dept` TEXT NOT NULL , `Emp_Commit` BOOLEAN NOT NULL , `Emp_Apex` BOOLEAN NOT NULL , `Emp_Status` TEXT NOT NULL , PRIMARY KEY (`Emp_Code`)) ENGINE = InnoDB COMMENT = 'Employee Master Data';
+
+''''' Kazen Table
+CREATE TABLE `kaizen`.`kaizen_mast` ( `code` INT(4) NOT NULL , `Name` TEXT NOT NULL , `desig` TEXT NOT NULL , `dept` TEXT NOT NULL , `comm` TEXT NOT NULL , `App` TEXT NOT NULL , `MGroup` TEXT NOT NULL , `FromNo` INT(5) NOT NULL , `Kdate` DATE NOT NULL , `Amount` DECIMAL(10) NOT NULL , `Safe` TEXT NOT NULL , `Quality` TEXT NOT NULL , `CSati` TEXT NOT NULL , `STime` TEXT NOT NULL , `Waste` TEXT NOT NULL , `Exp` TEXT NOT NULL , `Main` TEXT NOT NULL , `Improve` TEXT NOT NULL , `Beauty` TEXT NOT NULL , `Trust` TEXT NOT NULL , `validity` TEXT NOT NULL , PRIMARY KEY (`code`)) ENGINE = InnoDB;

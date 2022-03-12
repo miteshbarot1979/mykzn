@@ -1,0 +1,137 @@
+Arrays in PHP
+==================
+
+if we want to save multiple values in a single variable, we can use an array
+
+
+What is an array?
+===================
+An array is a collection of elements of semilar or different data types
+
+create an array
+=================
+
+$variable = ['value1',"value2",.....];
+
+or
+
+$variable = array("value1","value2",....)
+
+
+$arr = [10,20,30,40];
+
+$subjects = ["HTML","CSS","BootStrap","JavaScript","PHP",'MySQL'];
+
+$mix = [10,32.32,true,"Welcome"];
+
+$subjects[3]
+
+
+
+Types of arrays
+==================
+
+indexed arrays
+====================
+The arrays which are created with numerical indexes are called indexed arrays
+
+Associative Arrays
+===================
+The arrays which are created with named indexes are called associative arrays
+
+
+$variable = [ "key1" => "value1", "key2" => "value2",.... ];
+
+$user = [
+	"name" => "Ram",
+	"city" => "Hyderabad",
+	"state" => "TS",
+	"pincode" => 500032,
+];
+
+
+
+
+
+
+
+
+
+
+
+in c, c++, java
+==============
+An array is a collection of elements of semilar data type
+
+
+variable
+=========
+a variable is used to save some value
+only one value we can store in a variable
+
+
+foreach loop
+==============
+by using foreach loop we can iterate the indexed arrays and associative arrays also
+
+for loop
+=========
+by using for loop we can iterate the indexed arrays only
+
+
+
+
+foreach(array as $key => $value)
+{
+	echo $key;
+	echo $value;
+}
+
+
+both methods are used for sorting array values only
+sort - ASC
+rsort - DESC
+===================================================
+both methods are used for sorting array keys only
+ksort - ASC
+krsort - DESC
+
+
+array_combine
+===============
+Both parameters should have an equal number of elements
+expects exactly 2 parameters
+
+array_merge
+===============
+Both parameters should have an different number of elements
+expects exactly more than two parameters
+
+
+array_push - adding an elements into an array at last position
+array_unshift - adding an elements into an array at first position
+
+array_ pop - removes the last element from an array
+array_shift - removes the first element from an array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

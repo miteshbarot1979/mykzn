@@ -1,0 +1,21 @@
+Steps to work with Login form
+=============================
+1. create the form using HTML, email, password
+
+2. Design the form using CSS
+
+3. Validate the form using JavaScript
+
+4. Collect the form Data and Sanitize the data
+
+5. Connect to Database
+
+6. Verify the data which we collected
+
+		email and password should matched
+		account should be activated - active
+		
+7. if All success - Redirect to Home Page
+	
+	if Any error - Redirect to Login Page with error
+

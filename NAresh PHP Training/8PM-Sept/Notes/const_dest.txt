@@ -1,0 +1,47 @@
+Constructor
+=============
+__construct();
+
+constructor function is predefined
+
+this function will called automatically, if we can create an object.
+
+magic methods
+
+
+
+10 methods in a class - for all the methods, we need DB connection
+
+10 methods => 10 time db connections
+
+1 time DB connection ==> for all 10 methods
+
+Where we can write that 1 time db connection - constructor
+what is the best to write 1 time DB connection - constructor
+
+
+whatever the logic we are defining in a constructor, will reusable in each and every method of a class
+
+whatever the logic we are defining in a constructor, that will automatically available with in the all class methods
+
+
+constructor is the place where we can write the reusable logics: like Db connection, n/w settings....
+
+
+
+Destructor
+==============
+__destruct() is predefined function
+
+megic method
+
+this function will call automatically, when the class execution is completed
+
+
+At the time of class execution is completed, we have destroy the initialization logic
+closing db connection, closing n/w connection
+
+
+
+
+

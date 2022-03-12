@@ -1,0 +1,17 @@
+Steps to create signup/Register form
+=====================================
+1. create a HTML from with the fields: username,email,password,confirmpassword, mobile,gender.
+
+2. Design the form By using CSS
+
+3. Validate the all mandatory fields by using JavaScript
+
+4. collect the form data and Filter/Sanitize the Data
+
+5. Connect to database
+
+6. INSERT the Data into a table
+
+7. Send an Email to the Registered user with an activation link
+
+8. SUCCESS

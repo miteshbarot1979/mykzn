@@ -1,0 +1,51 @@
+MVC Architecure
+================
+Frameworks in PHP are built with MVC
+
+
+MVC is a design pattern
+
+
+what is a design pattern?
+==========================
+
+A design pattern is nothing but organizing the code in a structured manner
+
+The main AIM of MVC architecure is Separating the presentation logic with business logic
+
+
+Presentation Logic => HTML, CSS, JS
+
+Business Logic ==> PHP & MySQL
+
+
+Model
+======
+A model is a collection PHP files, that contains Database related logics
+A model is always responsible for Database operations
+
+
+Views
+========
+A view is a collection PHP files, that contains HTML, CSS, JS logics
+A View is always responsible for displaying the ouput
+
+Controlles 
+============
+Controlles is the HEART of MVC Architecure
+
+Controlles is also called as TRAFFIC COP
+
+A Controller is a collection PHP files, that contains controlling logic of application
+
+
+Each and every request and response will handled by controller only
+
+
+
+
+
+
+
+
+

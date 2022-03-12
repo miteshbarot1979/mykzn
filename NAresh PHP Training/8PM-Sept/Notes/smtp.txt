@@ -1,0 +1,36 @@
+
+TO work with mail function in localhost, we have configure the SMTP server
+GMAIL SMTP 
+
+PHP configuration settings = php.ini
+==========================================
+
+SMTP=smtp.gmail.com
+smtp_port=587
+sendmail_from = gophptrainings@gmail.com
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+
+email configuration settings = sendmail.ini
+==============================================
+
+smtp_server=smtp.gmail.com
+smtp_port=587
+auth_username=gophptrainings@gmail.com
+auth_password=********
+force_sender=gophptrainings@gmail.com
+===============================================
+login to gmail
+
+click on profile
+
+click on Manage your google account
+
+left pane => click on Security
+
+	if 2-step verification is enabled, please turn off
+	Enable Less Secure apps
+
+
+
+

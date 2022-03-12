@@ -1,0 +1,39 @@
+Control Structures
+==================
+include()
+============
+By using this method, we can include an external file into the current file, so that, we can reuse the external file logics into the currrent files.
+
+
+If the specified the file is not available to include, we can get warning error.
+
+include_once():
+===============
+
+By using this method, we can include a file only one time.
+
+This method will always verify before, whether the file is already included or not. if the file is included by somebody, this method never includes a file. otherwise it will includes a file
+
+
+
+
+
+require():
+=============
+By using this method, we can include an external file into the current file, so that, we can reuse the external file logics into the currrent files.
+
+
+
+If the specified the file is not available to include, we can get Fatal error.
+
+
+If we got warning error, script execution will never terminated
+
+If we got fatal error, script execution will terminated
+
+
+
+require_once()
+By using this method, we can include a file only one time.
+
+This method will always verify before, whether the file is already included or not. if the file is included by somebody, this method never includes a file. otherwise it will includes a file

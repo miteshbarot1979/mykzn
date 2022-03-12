@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shree Ganesh</title>
+    <link rel="stylesheet" href="style.css"
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fulid" style="margin-top: 30PX;">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="card" style="border-color:blue ;" >
+                    <div class="card-header bg-info text-white">
+                        <h> <b>Employee Master </b></h>
+                    </div>
+                    <div= class="card-body" style="background-color: #e9ecef;">
+                        <form action="" method="POST" enctype="multipart/form-data" role="form">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="empno"> Employee Code</label>
+                                                <input type="text" class="form-control"  name="empno" id="empno" size="5" required="">
+                                                <span id="available"> </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="empname"> Employee Name</label>
+                                                <input type="text" class="form-control" name="empname" id="empname" value="">
+                                                <span id="available"> </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="designation">Designation </label>
+                                            <select class="form-control" id="designation" name="designation">
+                                                <option>--------Select Designation--------</option>
+                                                <option>General Manager</option>
+                                                <option>Manager</option>
+                                                <option>Asst. Manager</option>
+                                                <option>Sr. Officer</option>
+                                                <option>OSD </option>
+                                                <option>Officer</option>
+                                                <option>Jr. Officer</option>
+                                                <option>Sr. Executive</option>
+                                                <option>Executive</option>
+                                                <option>Jr. Executive</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="department">Department</label>
+                                                <select class="form-control" id="department" name="department">
+                                                    <option>--------Select Department--------</option>
+                                                    <option>Adminsitration</option>
+                                                    <option>Accounts</option>
+                                                    <option>Marketting</option>
+                                                    <option>EDP</option>
+                                                    <option>Plant</option>
+                                                    <option>Project</option>
+                                                    <option>Purchase</option>
+                                                    <option>Procurement</option>
+                                                    <option>Cooperative Department</option>
+                                                    <option>AI & AHD </option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="address"> Address </label>
+                                                <textarea class="form-control" id="address" name="address" rows="4">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--display image-->
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div style="text-align: center;">
+                                                <img id="img-upload">
+                                                <div id="tem_img">
+                                                    <img src="Image/E-Avatar.png" alt="" width="250px" height="180px">
+                                                </div>
+                                                <br> <br>
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <span class="btn btn-info btn-file">
+                                                            SelectImage(4X6)<input type="file" id="imginp"
+                                                                name="file_img">
+                                                        </span>
+                                                    </span>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Department-->
+                                        <div class="col-md-12">
+                                           <!--  <label for="department">Department</label>
+                                            <select class="form-control" id="department" name="department">
+                                                <option>--------Select Department--------</option>
+                                                <option>Adminsitration</option>
+                                                <option>Accounts</option>
+                                                <option>Marketting</option>
+                                                <option>EDP</option>
+                                                <option>Plant</option>
+                                                <option>Project</option>
+                                                <option>Purchase</option>
+                                                <option>Procurement</option>
+                                                <option>Cooperative Department</option>
+                                                <option>Cooperative Department</option>
+                                            </select> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Salary-->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="appex"> Is Appex Member? </label>
+                                        <select class="form-control" id="appex" required="true">
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                        </select>
+                                     </div>
+                                </div>
+
+                                <!--Incentive-->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="comm"> Is Committee Member </label>
+                                        <select class="form-control" id="comm" required="true">
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                        </select>
+                                     </div>
+                                </div>
+                                <!--Language-->
+                                <!-- <div class="col-md-4">
+                                    <fieldset class="form-group">
+                                        <p>Language</p>
+                                        <div class="form-check-inline"> 
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" name="language[]" value="English">English
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline"> 
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" name="language[]" value="hindi">Hindi
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline"> 
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" name="language[]" value="gujarati">Gujarati
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div> -->
+                                <!-----Button----->
+                                <div class="col-md-12" style="text-align: center;">
+                                    <input type="submit" id="btn" name="btn" value="Insert" class="btn btn-primary" style="width: 100px; border-radius: 10px;">
+                                    &nbsp;&nbsp;
+                                    <input type="submit" id="reset" name="btn" value="Cancel" class="btn btn-warning" style="width: 100px; border-radius: 10px;">
+                                    &nbsp;&nbsp;
+                                    <button onclick="window.location.reload(true)" class="btn btn-success" style="width: 100px; border-radius: 10px;" >Refresh</button>
+                                    
+                                </div>
+
+                            </div>
+                        </form>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>

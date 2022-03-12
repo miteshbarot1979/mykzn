@@ -1,0 +1,211 @@
+Object Oriented PHP
+=====================
+
+The Primary template of OOP is a Class
+
+
+What is a class?
+================
+A Class is collection of Properties and Methods
+
+propertis are nothing but variables
+
+methods are nothing but functions
+
+
+A class will always groups something(props and methods) togeather
+
+
+A class is used to resue the logic 
+
+
+Real Life
+==========
+
+PHP Class Room
+===============
+collection of students and chairs
+
+Students ==> Methods ==> it's a TASK | Function | Work |
+
+Chairs ===> Properties
+
+
+collection of propertis and methods
+
+
+
+
+in a class room
+
+students are using chairs ? ==>Yes
+
+or
+
+chairs are using students? NO
+
+
+
+Some times the class propertis may depends upon the Methods
+
+or
+
+Some times the method execution may depends upon the properties
+
+
+The state of the class will depends upon the  properties
+
+The Behaviour/Functionality of the class depends upon the methods
+
+Employee
+	AddEmp
+	DeleteEmp
+	EditEmp
+	UpdateEmp
+	BlockEmp
+
+How to create a class?
+==========================
+by using class keyword, we can create a class
+
+
+class <class-name>
+{
+	// some properties
+	// some methods
+}
+
+class <class-name>
+{
+	// methods
+}
+
+class <class-name>
+{
+	// Properties
+}
+
+
+class <class-name>
+{
+}
+
+
+In class, the properties are declared by using access specifiers ==> public, private, protected
+
+
+How can we access the class members(Properties + Methods)?
+==========================================================
+
+By using an Object
+
+
+Why should i create an object?
+====================================
+Ans: to access the class members
+
+
+What will happen if i create an object?
+=======================================
+by creating an object the class members(props + Methods) will get Memory allocated...
+
+
+What is an Object?
+=====================
+an object is an Instance of a class or an object is a blueprint/xerox cpoy of a class
+
+
+What is meant by instance of a class?
+======================================
+instance/instantiation is nothing but allocating memory to the class members
+
+
+How can i create an Object?
+=============================
+
+By using new keyword with class
+
+$obj = new ClassName();
+
+
+Generally, there are two types of class members(properties + Methods)
+
+1. Non-Static Members
+=========================
+The class members which are declared WITHOUT static keyword are callled non-static members
+
+Non-Static members gets memory allocated at the time of object creation
+
+Non-Static members are always accessed by using an object.
+
+We can not access the static members with object
+
+if we want to execute some logic at the time of object creation, we can go for Non-Static members
+
+
+2. Static Members
+===========================
+The class members which are declared with static keyword are callled non-static members
+
+We can not access the static members of a class by using an Object
+
+Then how can we access the static members of a class?
+by using class name with scope resolution operator(::)
+
+Static members gets memory allocated at the time of class loading
+
+if we want to execute some logic at the time of class loading, we can go for Static members
+
+
+scope resolution operator(::)
+=============================
+By using this operator, we can access the static members of a class and Constants of a class also
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OOP's ===> Java, .net, Py, PHP, ROR

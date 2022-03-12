@@ -1,0 +1,123 @@
+
+JOINS
+=====
+
+By using JOINS we can combine two or more tables
+
+users,
+orders,
+enquiries
+
+select *from users;
+
+select * from orders;
+
+select * from enquiries;
+
+
+Relationship between the tables => Primary Key ==> Foreign Key
+
+id => auto_increment => primary column => 
+
+What is a primary key
+=======================
+A primary key column, 
+	-will never allows duplicate values
+	-will never allows null values
+
+
+users
+======
+id, username,email,mobile,gender,....
+
+in users table id is primary key
+
+orders
+======
+oid
+pname
+price
+date
+qty
+id
+
+in orders table id is Foreign key
+
+
+ALTER TABLE `orders` ADD CONSTRAINT `myconst` FOREIGN KEY (`id`) REFERENCES `users`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+users
+=======
+id, username,email,mobile
+
+Orders
+=======
+oid, pname, price, qty
+
+
+select table1.column1,table1.column2,... table2.column1, table2.column2,... from table1 JOIN table2 ON table1.commoncolumn = table2.commoncolumn where condition;
+
+
+example
+===========
+Inner JOIN:
+==============
+
+
+select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users JOIN orders ON users.id = orders.id;
+
+
+select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users JOIN orders ON users.id = orders.id where users.id = 1
+
+
+Left JOIN:
+==========
+by using this JOIN, we can get all the records of left table and only macthed records from the right table;
+
+select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users LEFT JOIN orders ON users.id = orders.id;
+
+
+
+
+Right JOIN
+=============
+by using this JOIN, we can get all the records of right table and only macthed records from the left table;
+
+select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users RIGHT JOIN orders ON users.id = orders.id;
+
+Full JOIN = Left JOIN UNION RIGHT JOIN
+=======================================
+
+select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users LEFT JOIN orders ON users.id = orders.id
+UNION
+select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users RIGHT JOIN orders ON users.id = orders.id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

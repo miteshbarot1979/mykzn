@@ -1,0 +1,85 @@
+Abstraction
+=============
+Abstraction is the process of hiding the logic.
+Abstraction does not provide the logic. it will ask the sub classes to implement the logic
+
+Abstraction will provides guidelines to the sub classes
+
+Abstraction defines rules and regulations to the sub classes
+
+Assignment
+==============
+Faculty: Print prime numbers between 2 and 20; ===> Abstraction
+
+Student => Implement/Write the logic for the Assignment
+
+Abstract classes are created with abstract keyword
+
+An abstract class may contains an abstract method and normal methods or Non-abstract methods
+
+Abstract method does not contains body => we can not write logic in abstract method
+
+in abstract class normal methods can have logic
+
+Can we create an object for abstract classes?
+
+Ans: NO
+
+Then how can we access the abstract class members?
+
+Ans: BY inheriting them with sub classes or By creating sub class object
+
+
+Interfaces
+===========
+Interfaces are also used to provide the guidelines the sub class members
+
+An Interface contains only abstract methods.
+
+If we want to provide strict rules and regulations to the sub class members we can use interfaces
+
+
+interfaces are created by using interface keyword.
+
+
+Can we create an object for interfaces?
+
+Ans: NO
+
+Then how can we access the Interface  members?
+
+Ans: BY implement them with sub classes or By creating sub class object
+
+
+Interfaces are implemented by the sub classes by using implements keyword
+
+
+class extend class
+
+class implements interface
+
+
+All Interface methods are by default abstract, by default public
+
+Interface methods also does not contains body
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

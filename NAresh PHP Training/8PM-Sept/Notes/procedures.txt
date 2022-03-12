@@ -1,0 +1,59 @@
+
+delimiter //
+
+CREATE procedure <procedure-name>()
+BEGIN
+	// some sql query
+END;
+
+
+delimiter ;
+=======================================
+Create Procedure
+
+delimiter //
+create procedure getAllUsers()
+BEGIN
+	select id, username,email,mobile from users;
+END //
+
+=======================================
+delimiter //
+create procedure getOrdersInfo()
+BEGIN
+	select users.id, users.username, users.email, users.mobile,orders.oid, orders.pname,orders.quantity, orders.price from users JOIN orders ON users.id = orders.id;
+END //
+
+
+
+; == // ===> delimiter //
+
+
+
+
+
+=====================================================
+
+How to Call Procedure ?
+
+by using call statement
+
+call getAllUsers();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function <somename>()
+{
+	//some block
+}

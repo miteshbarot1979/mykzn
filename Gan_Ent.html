@@ -1,0 +1,133 @@
+<?php
+ session_start();
+
+include 'connect.php';
+$code= empty($_POST['code']) ? '' : $_POST['code'] ;
+$sql = mysqli_query("select * from Emp_Code where code = '$code'");
+$result = mysql_fetch_assoc($sql);
+$code = $result['code'];
+$e1Name = $result['Emp_Name'];
+$e1desig = $result['Emp_Desig'];
+$e1dept = $result['Emp_Dept'];
+<!--//$e1img = $result['dcs_district'];-->
+
+?>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shree Ganesh</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="Eform.css"/>
+        <link script="Rform.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body onload="hideEmpl()" >
+        <div class="container-fluid">
+            <div class="panel panel-primary"> 
+                <div id="main_cont>
+                    <div class="panel-body">
+                        <form action="" method="POST">
+                            
+                                <div id="emp_det" class="form-group">
+                                    <div id="f_emp" class="col-md-6">
+                                        <div class="col-xs-6">
+                                            <label for="Emp1">First Employee Code*</label> 
+                                            <input class="form-control" id="e1code" name="e1code" required placeholder="000">
+                                        </div>        
+                                        <div class="col-xs-8">
+                                            <input class="form-control" id="e1name" name="e1name" value= "<?php  echo $result['e1Name']; ?"  >
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="form-control" id="e1desig" name="e1desig" required placeholder="Officer">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="form-control" id="e1dept" name="e1dept" required placeholder="Milk Procurement">
+                                        </div>   
+                                        <div id="avatar1">
+                                            <img src="image/553.jpg" width="90px" height="90px"alt="Avatar1">
+                                        </div> 
+                                        <div class="col-md-12 text-center">
+                                            <button type="button" id="btn1" class="btn btn-primary">Submit</button>
+                                        </div>  
+                                    </div>
+                                     <!--<This is for calling Employee Data"></script> -->
+                                 <?php
+                                 if(isset($_POST['btn1'])){
+                                     echo "Mitesh";
+                                 }
+                                 ?>  
+                                    
+                                    <div id="s_emp"class="col-md-6">
+                                        <div class="col-xs-6">
+                                            <label for="Emp2">Second Employee Code*</label> 
+                                            <input class="form-control" id="e2code" name="e2code" required placeholder="582">
+                                        </div>        
+                                        <div class="col-xs-8">
+                                            <input class="form-control" id="e2name" name="e2name" required placeholder="Mitesh B Barot">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="form-control" id="e2desig" name="e2desig" required placeholder="Officer">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="form-control" id="e2dept" name="e2dept" required placeholder="Milk Procurement">
+                                        </div>   
+                                        <div id="avatar2">
+                                            <img src="image/551.jpg" width="90px" height="90px"alt="Avatar1">
+                                        </div> 
+                                        
+                                            <div class="col-md-12 text-center">
+                                                <button type="button" id="btn2" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        
+
+                                    </div>
+                                    <div id="t_emp" class="col-md-6">
+                                        <div class="col-xs-6">
+                                            <label for="Emp3">Third Employee Code*</label> 
+                                            <input class="form-control" id="e3code" name="e3code" required placeholder="582">
+                                        </div>        
+                                        <div class="col-xs-8">
+                                            <input class="form-control" id="e3name" name="e3name" required placeholder="Mitesh B Barot">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="form-control" id="e3desig" name="e3desig" required placeholder="Officer">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="form-control" id="e3dept" name="e3dept" required placeholder="Milk Procurement">
+                                        </div>   
+                                        <div id="avatar3">
+                                            <img src="image/554.jpg" width="90px" height="90px"alt="Avatar1">
+                                        </div> 
+                                        
+                                        <div class="col-md-12 text-center">
+                                            <button type="button" id="btn3" class="btn btn-primary">Submit</button>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                                <div id="Kzn_form_det"></div>
+                                <div id="Kzn_opt"></div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+            
+    </div>
+        <!--<script src="main.js"></script> -->
+        <script src="main.js" async defer></script>
+    </body>
+</html>

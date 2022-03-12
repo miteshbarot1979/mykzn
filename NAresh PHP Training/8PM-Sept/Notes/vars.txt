@@ -1,0 +1,33 @@
+Variables in PHP
+====================
+what is a variable?
+
+A variable is a container that can store a value
+
+A variable can be reusable every where in our file
+
+c = 100;
+
+varying => changing the value
+
+
+variables are declared by using $ symbol
+
+in PHP, while declaring the variables, we no need to mention the datatype
+
+$c = 10; => $c = "Hello";
+$f = 10.5;
+
+$firstname = "Ram";
+$lastname = "Babburi";
+
+
+echo
+========
+
+1. using echo statement we can print the multiple variables with comma separated, where as by using print we can not
+
+2. print statement will always returns true after printing the output. where as echo statement does not return any value
+
+
+

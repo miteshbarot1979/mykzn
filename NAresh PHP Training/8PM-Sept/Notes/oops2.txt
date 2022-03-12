@@ -1,0 +1,76 @@
+Encapsulation
+=============
+Encapsulation is nothing but protecting the data/logic
+
+Encapsulation is nothing but wrapping up of the data/logic
+
+Wrapper => Chcolate
+
+MObile Phone
+
+Human Body 
+
+
+Capsule ===> 
+
+How can we protect the class logic?
+=====================================
+By using private acess specifiers.
+
+
+Access Specifiers
+==================
+Private: The class members which are declared with private access specifier, they can be accessed inside a class only.
+Private members can not be accessed outside of a class and it's subclass
+
+Protected: The class members which are declared with protected access specifier, they can be accessed inside a class only and its sub class also.
+protected members can not be accessed outside of a class
+
+Public:The class members which are declared with public access specifier, they can be accessed every where in the class, its sub classes and outside of a class also
+
+Inheritance
+===========
+Inheritance is the process of acquiring the properties of a class into another class
+
+Inheritance is the process of sharing the properties of a parent class into child class
+
+Inheritance is implmented by using extends keyword
+
+
+
+GF => 5L
+
+F ===> 10L
+
+Me ===> 15L
+
+
+Polymorphism
+=================
+
+Ploy - many
+morphs -> different forms
+
+There is method with same name in Father class and Child class. But its logic is different. for Father class, it will execute one logic, for child class it will execute some other logic
+
+class Father
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Abstaction
+Interfaces

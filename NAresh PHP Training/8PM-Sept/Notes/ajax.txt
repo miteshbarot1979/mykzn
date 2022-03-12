@@ -1,0 +1,120 @@
+
+AJAX
+======
+
+How to work with AJAX
+========================
+
+backbone of ajax is XMLHttpRequest Object, its predefined
+
+1. create ajax Object
+
+var obj = new XMLHttpRequest();
+
+2. Sending request to serever
+
+obj.open("type of Method", "End Point URL", request type);
+obj.send();
+
+type of method => GET or POST
+
+End Point URL ==> Request URL, to get the data
+
+http://localhost/8pmsept/data.php
+
+https://jsonplaceholder.typicode.com/users
+
+
+request type => true | false
+
+asynchronus request - true
+============================
+irctc.co.in at 11AM ==> Sending multiple requests to server without waiting for the response
+
+
+synchronus request - false
+==========================
+ticket counter => One By One => Sending requests to server one by one
+
+obj.open("GET","https://jsonplaceholder.typicode.com/users", true);
+obj.send();
+
+============================================================
+
+3. Response Handling
+
+onreadystatechange
+====================
+this event property will call a function, when server receives the request
+
+readyState
+==========
+0 - request not initialized
+1 - request initialized
+2 - Request Sent to server
+3 - Request is processing by the server
+4 - Response is Ready
+
+status
+==========
+200 - Ok
+404 - May be request URL Not Found
+500 - Internal Server - Problemns in server
+403 - Access Forbidden- we dont have permission to access the end point URL
+
+
+
+responseText
+==============
+to get Response which sent by server
+
+
+obj.onreadystatechange = fuction(){
+	
+	if(obj.readyState == 4 && obj.status == 200)
+	{
+		obj.responseText
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

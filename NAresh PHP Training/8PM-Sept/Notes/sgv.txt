@@ -1,0 +1,76 @@
+Local Variables
+================
+The variables, which are declared inside a function are called local variables
+
+function someFunction()
+{
+	$x = 100;
+	$y = 200;
+}
+
+Note:
+===== 
+We can not access the local variables outside a function. The scope of local variable is with in the function only
+
+Global Variables
+======================
+The variables, which are declared inside a file are called global variables.
+We can  access the global variables anyhwere in file. The scope of global variable is with in the entaire file.
+
+Super Global Variables
+=========================
+The scope of a super global variable is with in the entire project
+
+All the Super Global variables are Predefined by PHP
+
+All Super Global variable are by default Associative Arrays
+
+1. $GLOBALS[]
+
+2. $_GET[]
+3. $_POST[]
+4. $_REQUEST[]
+
+5. $_SERVER[]
+
+6. $_COOKIE[]
+7. $_SESSION[]
+
+8. $_FILES[][]
+
+========================================================
+
+1. $GLOBALS
+===============
+How can we access the global variables of a file in a function?
+
+How can we access the global variables in a function?
+
+Ans: By using $GLOBALS[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

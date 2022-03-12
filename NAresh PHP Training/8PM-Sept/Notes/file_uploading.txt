@@ -1,0 +1,32 @@
+$_FILES[][]
+================
+
+By using this variable, we get the uploaded file information
+
+
+<input type="text" />
+<input type="submit" />
+<input type="file" /> display a choose file button
+
+<form>
+	<input type="file" />
+</form>
+
+By default an HTML form can transfer the plain text and html text only.
+
+By default a form can not transfer media data
+
+if we want to transfer some media data like images, audios, vidoes and moree.. through a form, we need to add an attribute the form is nothing but enctype with value multipart/form-data like below
+
+ <form action="" method="POST" enctype="multipart/form-data"> 
+ 
+ </form>
+
+
+
+
+
+
+
+
+

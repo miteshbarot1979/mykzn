@@ -1,0 +1,87 @@
+date and time
+===============
+
+Current date and Time
+
+2021-10-21
+
+creating an account FB => 
+
+Flights Travel Reservation WebSite
+==================================
+
+Education Related WebSite for the client Dubai
+
+Student ===> Tutor
+
+
+PHP ======> Dubai
+9:00AM =========> 9:00AM
+9:00AM =========> 7:30AM
+
+9:00AM JOined Joined Waiting for Tutor(7:30AM)
+Dubair 9:00AM Tutor Waiting for the Student(10:30)
+
+======================================================
+
+Flash Sale Amazon
+
+Buy Now 12:00PM
+
+
+ONline Rummy ==> Tournment Join
+
+WhatsApp Status
+
+	3min ago 
+
+
+9:00AM ===> 
+
+7:30AM ===>
+Hyd =====> Dubai
+
+==============================================
+
+d - 01 to 31
+
+j - 1 to 31
+
+D - Mon to Sun
+
+l - Sunday to Monday
+
+================================
+
+m - 01 to 12
+
+n - 1 to 12
+
+M - Jan, Feb
+
+F - January to December
+
+=============================
+
+y - 21
+
+Y - 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
