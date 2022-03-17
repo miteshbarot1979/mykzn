@@ -16,10 +16,9 @@ $empdesignation=0;
 $empdept=0;
 
 
-if(isset($_REQUEST['id'])){
+if(isset($_REQUEST['sid'])){
 
-$code = $_REQUEST['id'];
-//$code=553;
+$code = $_REQUEST['sid'];
     
 $sql = "SELECT * FROM emp_master where Emp_Code=".$code;
 $result = $conn->query($sql);
@@ -39,15 +38,14 @@ $result = $conn->query($sql);
           
        $status=1;
       }
-    }
-      //}
+  }
     else{
         
-       $status=0;
+         $status=0;
     }
 }
-$type="success";
-echo '{"type" : "'.$type.'","status" : "'.$status.'","code" : "'.$code.'","empname" : "'.$emp.'","empimage" : "'.$empimage.'","empdesignation" : "'.$empdesignation.'","empdept" : "'.$empdept.'"}';
+$type="success2";
+echo '{"type2" : "'.$type.'","status2" : "'.$status.'","code2" : "'.$code.'","empname2" : "'.$emp.'","empimage2" : "'.$empimage.'","empdesignation2" : "'.$empdesignation.'","empdept2" : "'.$empdept.'"}';
 //echo '{"type" : "'.$type.'","status" : "'.$status.'","code" : "'.$code.'","empname" : "'.$emp.'","dept" : "'.$dept.'","desg" : "'.$desg.'"}';
 exit(0);
 

@@ -19,7 +19,6 @@ $empdept=0;
 if(isset($_REQUEST['id'])){
 
 $code = $_REQUEST['id'];
-//$code=553;
     
 $sql = "SELECT * FROM emp_master where Emp_Code=".$code;
 $result = $conn->query($sql);
@@ -39,11 +38,10 @@ $result = $conn->query($sql);
           
        $status=1;
       }
-    }
-      //}
+  }
     else{
         
-       $status=0;
+         $status=0;
     }
 }
 $type="success";
