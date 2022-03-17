@@ -53,11 +53,10 @@ $('#btn1').on('click', function () {
              $('#Avt1').attr('src',obj.empimage);
 
 
-
            if (confirm("શું આ ગ્રુપ કાયઝન છે?")) {
             document.getElementById('btn1').style.visibility = 'hidden';
-                document.getElementById("e2code").focus();
            
+                document.getElementById("e2code").focus();
                $('#btn2').on('click', function () {
                 var sid= document.getElementById("e2code").value;
               ///// alert(sid); Alert for ID only
@@ -114,13 +113,13 @@ $('#btn1').on('click', function () {
 
 
            if (confirm("Do you want to search another record!")) {
-            document.getElementById('btn3').style.visibility = 'hidden';
+                document.getElementById('btn3').style.visibility = 'hidden';
                 document.getElementById("data").focus();
 
 
           } else {
             //input box
-              document.getElementById("KznNo").focus();
+            document.getElementById("Kzn_FormNo").focus();
           }
 
 
@@ -137,7 +136,8 @@ $('#btn1').on('click', function () {
 
           } else {
             //input box
-              document.getElementById("KznNo").focus();
+             document.getElementById('btn2').style.visibility = 'hidden';
+              document.getElementById("Kzn_FormNo").focus();
           }
 
 
@@ -153,7 +153,9 @@ $('#btn1').on('click', function () {
 
           } else {
             //input box
-              document.getElementById("KznNo").focus();
+            
+            document.getElementById('btn1').style.visibility = 'hidden';
+            document.getElementById("Kzn_FormNo").focus();
           }
 
 
@@ -247,14 +249,14 @@ $('#btn1').on('click', function () {
                                     <div id="CheckSpace">
                                         <div id="KznNo" class="col-md-2">
                                         <div class="form-group"class="col-md-2">
-                                            <label for="Kaizen Form No.">Kaizan Form No.</label>
-                                            <input type="text" class="form-control" id="Kzn_FormNo" aria-describedby="emailHelp" placeholder="Form Number">
+                                            <label for="Kaizen Form No."> કાઈઝન ફોર્મ નંબર</label>
+                                            <input type="text" width="6px"class="form-control" id="Kzn_FormNo" aria-describedby="emailHelp" placeholder="Form Number">
                                         </div>
                                         </div>
                                         <div id="KznDt" class="col-md-4">
                                             <div class="col-xs-6">
                                                 <div class="form-group"class="col-md-6">
-                                                    <label for="Kaizen Date">Kaizan Date.</label>
+                                                    <label for="Kaizen Date">કાઈઝન કર્યા તારીખ</label>
                                                     <input type="text" class="form-control" id="Kzn_Date" aria-describedby="Kaizen Date" placeholder="DD/MM/YYYY">
                                                 </div>
                                             </div>
@@ -263,7 +265,7 @@ $('#btn1').on('click', function () {
                                         <div id="KznAmt" class="col-md-4">
                                             <div class="col-xs-6">
                                                 <div class="form-group"class="col-md-6">
-                                                    <label for="Kaizen Amt">Kaizan Amount in Rs.</label>
+                                                    <label for="Kaizen Amt">કાઈઝન રકમ રૂ.</label>
                                                     <input type="text" class="form-control" id="Kzn_Amt" aria-describedby="Kaizen Amount" placeholder="000">
                                                 </div>
                                             </div>
